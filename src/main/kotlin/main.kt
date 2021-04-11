@@ -18,7 +18,6 @@ fun main() {
             println("\nJ1 ha terminado")
         }
 
-
         this.launch {
             repeat(10) {
                 println("\nTirada ${it + 1} de J2, ha sacado: ${lista2.random()}")
