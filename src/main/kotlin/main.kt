@@ -2,8 +2,6 @@ import kotlinx.coroutines.*
 
 fun main() {
 
-    //Creamos las dos listas
-
     val lista1 = listOf<Int>(1, 2, 3, 4, 5, 6)
     val lista2 = listOf<Int>(1, 2, 3, 4, 5, 6)
 
