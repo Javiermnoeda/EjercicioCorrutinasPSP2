@@ -15,7 +15,7 @@ fun main() {
     runBlocking {
         this.launch {
             repeat(10) {
-                println("\nTirada ${it + 1} de  J1, ha sacado: ${lista1.random()}")
+                println("\nTirada ${it + 1} de J1, ha sacado: ${lista1.random()}")
                 delay(1000)
                 x += lista1.random()
 
