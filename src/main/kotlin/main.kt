@@ -18,7 +18,6 @@ fun main() {
                 println("\nTirada ${it + 1} de J1, ha sacado: ${lista1.random()}")
                 delay(1000)
                 x += lista1.random()
-
             }
             println("\nJ1 ha terminado")
         }
@@ -29,11 +28,9 @@ fun main() {
                 println("\nTirada ${it + 1} de J2, ha sacado: ${lista2.random()}")
                 delay(1500)
                 y += lista2.random()
-
             }
             println("\nJ2 ha terminado")
         }
-
     }
 
     println("\nJ1 ha sacado $x en total")
