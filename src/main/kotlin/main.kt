@@ -37,7 +37,7 @@ fun main() {
     }
 
     println("\n J1 ha sacado $x en total")
-    println("J2 ha sacado $y en total")
+    println(" J2 ha sacado $y en total")
 
     if (x>y){
         println("\n HA GANADO EL JUGADOR 1")
