@@ -15,7 +15,7 @@ fun main() {
     runBlocking {
         this.launch {
             repeat(10) {
-                numSacado = random.nextInt(6)+1
+                numSacado = random.nextInt(6)+1 //Genera Numeros del 1 al 6
                 println("\nTirada ${it + 1} de J1, ha sacado: $numSacado")
                 listaJ1.add(numSacado)
                 delay(1000)
