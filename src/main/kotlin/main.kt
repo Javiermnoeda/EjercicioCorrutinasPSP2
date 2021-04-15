@@ -13,6 +13,7 @@ fun main() {
     var totalJ2 = 0
 
     runBlocking {
+
         this.launch {
             repeat(10) {
                 numSacado = random.nextInt(6)+1 //Genera Numeros del 1 al 6
