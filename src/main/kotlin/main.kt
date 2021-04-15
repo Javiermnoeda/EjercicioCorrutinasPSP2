@@ -31,7 +31,7 @@ fun main() {
 
         this.launch {
             repeat(10) {
-                numSacado = (min..max).random()
+                numSacado = (min..max).random() //Genera Numeros del 1 al 6
                 println("\nTirada ${it + 1} del Juagador 2, ha sacado: $numSacado")
                 listaJ2.add(numSacado)
                 delay(1500)
