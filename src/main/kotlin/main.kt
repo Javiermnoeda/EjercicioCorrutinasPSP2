@@ -3,6 +3,9 @@ import java.util.*
 
 fun main() {
 
+    val min = 1
+    val max = 6
+
     val random = Random()
     var numSacado = 0
 
@@ -28,7 +31,7 @@ fun main() {
 
         this.launch {
             repeat(10) {
-                numSacado = random.nextInt(6)+1
+                numSacado = (min..max).random()
                 println("\nTirada ${it + 1} del Juagador 2, ha sacado: $numSacado")
                 listaJ2.add(numSacado)
                 delay(1500)
