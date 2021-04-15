@@ -15,7 +15,7 @@ fun main() {
     runBlocking {
         this.launch {
             repeat(10) {
-                numSacado = random.nextInt(1..7)
+                numSacado = random.nextInt(6)+1
                 println("\nTirada ${it + 1} de J1, ha sacado: $numSacado")
                 listaJ1.add(numSacado)
                 delay(1000)
@@ -27,7 +27,7 @@ fun main() {
 
         this.launch {
             repeat(10) {
-                numSacado = random.nextInt(1..7)
+                numSacado = random.nextInt(6)+1
                 println("\nTirada ${it + 1} de J2, ha sacado: $numSacado")
                 listaJ2.add(numSacado)
                 delay(1500)
@@ -43,8 +43,4 @@ fun main() {
 
     if (totalJ1 > totalJ2) println("\nJ1 ha sacado el numero más alto") else println("\nJ2 ha sacado el numero más alto")
 
-}
-
-fun Random.nextInt(range: IntRange): Int {
-    return range.start + nextInt(range.last - range.start)
 }
